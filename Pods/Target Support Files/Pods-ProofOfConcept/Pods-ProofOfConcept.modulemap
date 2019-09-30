@@ -1,6 +1,0 @@
-module Pods_ProofOfConcept {
-  umbrella header "Pods-ProofOfConcept-umbrella.h"
-
-  export *
-  module * { export * }
-}
