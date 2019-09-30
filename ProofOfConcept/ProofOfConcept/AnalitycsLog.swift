@@ -11,7 +11,7 @@ import Logger
 
 class AnalitycsLog : RegisterLogType{
     func send(log: Log) {
-        print("AnalitycsLog " + log.toString())
+        debugPrint(log.toString())
     }
 }
 

@@ -15,7 +15,7 @@ public class ConsoleOSLog: RegisterLogType {
     
     public func send(log: Log) {
         let data = log.toString()
-        print(data)
+        debugPrint(data)
         os_log("%@", log: self.setuplog(), data)
     }
 
