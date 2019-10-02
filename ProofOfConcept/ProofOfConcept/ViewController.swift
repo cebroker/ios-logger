@@ -13,11 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let mediator = LogMediator()
-        mediator.add(registerLog: ConsoleOSLog())
-        mediator.add(registerLog: AnalitycsLog())
-        let logger = Logger(mediador: mediator)
-        logger.debugLog(logCategory: .debug, data: nil, message: "this is a message")
+       
+        Logger.shared.addRegisterLogger(ConsoleOSLog())
+        Logger.shared.addRegisterLogger(AnalitycsLog())
+        Logger.shared.debugLog(logCategory: .error, data: nil, message: "this is a message")
     }
 }
 

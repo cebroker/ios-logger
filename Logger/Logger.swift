@@ -10,13 +10,18 @@ import Foundation
 
 public class Logger {
     
+    public static let shared = Logger()
+    
     private let mediador: LogMediator
     
-    public init(mediador: LogMediator){
-        self.mediador = mediador
+    private init(){
+        self.mediador = LogMediator()
     }
-
-    public  func debugLog(logCategory: LogCategory,
+    
+    public func addRegisterLogger(_ log: RegisterLogType) {
+        self.mediador.add(registerLog: log)
+    }
+    public func debugLog(logCategory: LogCategory,
         data: Any? = nil,
         message: String = "",
         fileName: String = #file,
