@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AAD32D46A03D1502A7800B41 /* libPods-LoggerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080258EA96C0BFBCC2D8F9CB /* libPods-LoggerTests.a */; };
+		D10CDB60234D309200762AA3 /* LogWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10CDB5F234D309200762AA3 /* LogWrapper.swift */; };
 		D170CB1D233A52A2001FF9F9 /* LogMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170CB1C233A52A2001FF9F9 /* LogMediator.swift */; };
 		D1A552A723353EC9000EBEDB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A552A623353EC9000EBEDB /* Logger.swift */; };
 		D1A552AB23355341000EBEDB /* LogCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A552AA23355341000EBEDB /* LogCategory.swift */; };
@@ -39,6 +40,7 @@
 		6772E4A7C6BF3F8D5667ADD6 /* libPods-Logger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Logger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D454C020546E12944917222 /* Pods-Logger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logger.release.xcconfig"; path = "Target Support Files/Pods-Logger/Pods-Logger.release.xcconfig"; sourceTree = "<group>"; };
 		9636001CF92882BF83C29E03 /* Pods-LoggerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerTests.debug.xcconfig"; path = "Target Support Files/Pods-LoggerTests/Pods-LoggerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D10CDB5F234D309200762AA3 /* LogWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWrapper.swift; sourceTree = "<group>"; };
 		D170CB1C233A52A2001FF9F9 /* LogMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMediator.swift; sourceTree = "<group>"; };
 		D1A552A623353EC9000EBEDB /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D1A552AA23355341000EBEDB /* LogCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCategory.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				D1AD903323397CF0009B9664 /* ConsoleOSLog.swift */,
 				D1AD903523397D83009B9664 /* RegisterLogType.swift */,
 				D170CB1C233A52A2001FF9F9 /* LogMediator.swift */,
+				D10CDB5F234D309200762AA3 /* LogWrapper.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10CDB60234D309200762AA3 /* LogWrapper.swift in Sources */,
 				D1AD9038233980D7009B9664 /* LogMock.swift in Sources */,
 				D1DE0E51233573C70004BF88 /* LogType.swift in Sources */,
 				D1A552AB23355341000EBEDB /* LogCategory.swift in Sources */,

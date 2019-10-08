@@ -10,5 +10,6 @@ import Foundation
 
 public protocol LogType {
     func toString() -> String
+    func getLogWrapper() -> LogWrapper
     func sourceFileName(filePath: String) -> String
 }
