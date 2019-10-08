@@ -33,6 +33,25 @@ internal class LogMock: LogType {
         self.date = Date()
     }
     
+    internal func getLogWrapper() -> LogWrapper {
+        let date = self.date.toString()
+        let data = "\(self.data ?? "")"
+        let messageString = message.isEmpty ? "" : "message: \(message)"
+        let type = self.logCategory.rawValue
+        let fileName = "\(sourceFileName(filePath: self.fileName))"
+        let functionName = self.functionName
+        let line = String(self.line)
+        
+        return LogWrapper(date: date,
+                          data: data,
+                          type: type,
+                          fileName: fileName,
+                          functionName: functionName,
+                          line: line,
+                          message: messageString)
+    }
+
+    
     internal func toString() -> String {
         var logString = ""
         let dateString = self.date.toString()
