@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         Logger.shared.addRegisterLogger(ConsoleOSLog())
         Logger.shared.addRegisterLogger(AnalitycsLog())
         Logger.shared.debugLog(logCategory: .error, data: nil, message: "this is a message")
+        let keyReport = KeyReport.login
+        Logger.shared.sendReport(key: keyReport, value:"sdf")
     }
 }
 
