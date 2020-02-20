@@ -9,11 +9,10 @@
 import Foundation
 import os
 
-public class ConsoleOSLog: RegisterLogType {
+public class ConsoleOSLog: RegisterLog {
+    public override init() {}
     
-    public init() {}
-    
-    public func send(log: Log) {
+    public override func send(log: Log) {
         let data = log.toString()
         debugPrint(data)
         os_log("%@", log: self.setuplog(), data)

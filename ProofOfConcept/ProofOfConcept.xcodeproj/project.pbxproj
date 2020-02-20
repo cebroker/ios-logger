@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		05CC0F6FF23CED3D64DD7D30 /* libPods-ProofOfConcept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A6B365672013F549087C0B /* libPods-ProofOfConcept.a */; };
 		D170CB1F233A607A001FF9F9 /* AnalitycsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D170CB1E233A607A001FF9F9 /* AnalitycsLog.swift */; };
+		D1B1C31323FB429C002C6F88 /* KeyReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1C31223FB429C002C6F88 /* KeyReport.swift */; };
 		D1D1E03E2334307A00FA93BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1E03D2334307A00FA93BB /* AppDelegate.swift */; };
 		D1D1E0402334307A00FA93BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1E03F2334307A00FA93BB /* ViewController.swift */; };
 		D1D1E0432334307A00FA93BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D1E0412334307A00FA93BB /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		1665123213EB137AC3EE6B63 /* Pods-ProofOfConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProofOfConcept.release.xcconfig"; path = "Target Support Files/Pods-ProofOfConcept/Pods-ProofOfConcept.release.xcconfig"; sourceTree = "<group>"; };
 		58A6B365672013F549087C0B /* libPods-ProofOfConcept.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProofOfConcept.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D170CB1E233A607A001FF9F9 /* AnalitycsLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalitycsLog.swift; sourceTree = "<group>"; };
+		D1B1C31223FB429C002C6F88 /* KeyReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyReport.swift; sourceTree = "<group>"; };
 		D1D1E03A2334307A00FA93BB /* ProofOfConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProofOfConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D1E03D2334307A00FA93BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D1E03F2334307A00FA93BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D1D1E0462334307B00FA93BB /* LaunchScreen.storyboard */,
 				D1D1E0492334307B00FA93BB /* Info.plist */,
 				D170CB1E233A607A001FF9F9 /* AnalitycsLog.swift */,
+				D1B1C31223FB429C002C6F88 /* KeyReport.swift */,
 			);
 			path = ProofOfConcept;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				D1D1E0402334307A00FA93BB /* ViewController.swift in Sources */,
 				D1D1E03E2334307A00FA93BB /* AppDelegate.swift in Sources */,
 				D170CB1F233A607A001FF9F9 /* AnalitycsLog.swift in Sources */,
+				D1B1C31323FB429C002C6F88 /* KeyReport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
