@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                 = "Logger"
-  spec.version              = "0.0.2"
+  spec.version              = "0.0.3"
   spec.summary              = "Logger with firebase analytics"
   spec.description          = "Logger with firebase analytics Logger"
   spec.homepage             = "https://github.com/cebroker/ios-logger.git"
