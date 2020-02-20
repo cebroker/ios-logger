@@ -10,17 +10,24 @@ import Foundation
 
 public class LogMediator {
 
-    private var registerLogs: [RegisterLogType] = []
-    
-    public init() {}
-    
-    public func add(registerLog: RegisterLogType) {
+    private var registerLogs: [RegisterLog] = []
+
+    public init() { }
+
+    public func add(registerLog: RegisterLog) {
         registerLogs.append(registerLog)
     }
-    
+
     public func send(log: Log) {
         for registerLog in registerLogs {
             registerLog.send(log: log)
+        }
+    }
+
+    
+    public func send<T>(key: KeyType, value: T) {
+        for registerLog in registerLogs {
+            registerLog.send(key: key, value: value)
         }
     }
 }

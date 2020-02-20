@@ -9,9 +9,15 @@
 import Foundation
 import Logger
 
-class AnalitycsLog : RegisterLogType{
-    func send(log: Log) {
+class AnalitycsLog: RegisterLog {
+    public override init() { }
+
+    override func send(log: Log) {
         debugPrint(log.toString())
+    }
+
+    override func send<T>(key: KeyType, value: T) {
+        print([key.key: value])
     }
 }
 
